@@ -143,6 +143,23 @@ default|The user-friendly keyword. It's a shortcut provided by some systems' com
 
 ## Level 6
 
+We can not use the the default route as the destination of the internet.
+
+The Internet device looks at this address and asks itself two questions:
+- WHAT network am I trying to reach? (This is the Left Side of the route)
+- WHO do I give the packet to to get it there? (This is the Right Side of the route)
+
+Left side of routes box
+- The Internet device cannot have a default route. It needs a specific rule to find your network.
+- You must tell it the exact "name" of the network it's looking for.
+- The name of a network is its Network Address + Subnet Mask.
+
+We check the IP of the host: 84.35.205.227 and it's IP mask: 255.255.255.128, this mask is equivalent to /27.
+
+This results in: 84.35.205.227/27 but this is a **Host Address** so to convert it to the **Network Address**: 84.35.205.224/27
+
+To do: Check if there is an error on the simulator. Loop detected? Accepts the host and network addresses.
+
 ## Level 7
 
 ## Level 8
