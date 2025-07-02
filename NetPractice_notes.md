@@ -162,6 +162,8 @@ To do: Check if there is an error on the simulator. Loop detected? Accepts the h
 
 ## Level 7
 
+Create at least 3 subnets for each network.
+
 ## Level 8
 
 ## Level 9
