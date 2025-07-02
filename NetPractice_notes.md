@@ -85,6 +85,41 @@ Since 104.198.162.125 is also already assigned and locked for one of the interfa
 
 ## Level 4
 
+A /23 mask is written in long form as 255.255.254.0. Sometimes called a **supernet**.
+
+A /23 mask effectively "merges" two adjacent /24 networks into one single, larger network. It doubles the number of available addresses.
+
+The total block size is 2^9 = 512 addresses. This means the network spans across 512 addresses, or two blocks of 256.
+- The network range would be from 10.0.4.0 all the way to 10.0.5.255.
+
+Network Address (Reserved)|Usable IP Range (VALID)|Broadcast Address (Reserved)
+-|-|-
+10.0.4.0|10.0.4.1 to 10.0.5.254|10.0.5.255
+
+### About CIDR (Classless Inter-Domain Routing).
+
+Case 1: The Familiar /24 (Mask 255.255.255.0)
+- Total bits: 32
+- The /24 tells us the Network Part is the first 24 bits.
+- This leaves 32 - 24 = **8 bits** for the Host Part.
+- How many different house numbers can you make with 8 bits? 2⁸ = 256.
+- This is why a /24 network has 256 total addresses.
+
+Case 2: The New /23 (Mask 255.255.254.0)
+- Total bits: 32
+- The /23 tells us the Network Part is the first 23 bits.
+- This leaves 32 - 23 = **9 bits** for the Host Part.
+- How many different house numbers can you make with 9 bits? 2⁹ = 512.
+- This is why a /23 network has 512 total addresses.
+
+/24 Mask:
+11111111.11111111.11111111.00000000
+(24 ones, then 8 zeroes)
+
+/23 Mask:
+11111111.11111111.1111111**0**.00000000
+(23 ones, then 9 zeroes)
+
 ## Level 5
 
 ## Level 6
