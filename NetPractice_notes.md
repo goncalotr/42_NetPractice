@@ -122,6 +122,25 @@ Case 2: The New /23 (Mask 255.255.254.0)
 
 ## Level 5
 
+Theme: routing
+
+We need to define the default gateway for each device this time.
+- The Client Device: A house.
+- The Subnet: The neighborhood.
+- The Router: The post office.
+- The Default Gateway: The address of the post office (123 Main Street).
+
+>The gateway address we configure on a client is ALWAYS the IP address of the router interface that is on the SAME LOCAL NETWORK as the client.
+
+Destination => Gateway
+- Left Side: 0.0.0.0 (This means "for any destination") - actually we need to use `default` here.
+- Right Side: The IP address of the router interface on the same network as Host A.
+
+Term|What it is|Meaning
+-|-|-
+0.0.0.0|The technical standard. It's the actual address and mask (/0) that networking hardware uses to define the default route.|"For any destination IP address..."
+default|The user-friendly keyword. It's a shortcut provided by some systems' command lines or interfaces for ease of use.|"This is the default route."
+
 ## Level 6
 
 ## Level 7
