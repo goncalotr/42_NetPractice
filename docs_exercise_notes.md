@@ -1,4 +1,4 @@
-# NetPractice Notes
+# NetPractice Exercise Notes
 
 ## Level 1
 
@@ -165,6 +165,17 @@ To do: Check if there is an error on the simulator. Loop detected? Accepts the h
 Create at least 3 subnets for each network.
 
 ## Level 8
+
+The routing table on the router 1 (R1) represents the traffic, Egress Traffic and Upstream Traffic, if the traffic is internal to the network or goes to the internet.
+
+We need to define it using the special "catch-all" destination address: 0.0.0.0/0. This literally means "any IP address with any subnet mask."
+
+Internet: 163.161.194.0/26 (locked)
+Packets IPs: 163.14.136.0 to 163.14.136.63
+
+/28 = 255.255.255.240
+
+
 
 ## Level 9
 
