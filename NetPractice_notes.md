@@ -4,6 +4,10 @@
 
 Repeat IP addresses with different host (last part of the address).
 
+An IP address (A.B.C.D) has two parts:
+- Network Part: Identifies the "neighborhood."
+- Host Part: Identifies a specific "house" within that neighborhood.
+
 ## Level 2
 
 ### Left Network
@@ -69,6 +73,15 @@ So with 4 Block Size we get
 Example: 127.0.0.1 is known by the hostname localhost.
 
 ## Level 3
+
+Select the same masks for all interfaces.
+For 255.255.255.128 (already assigned and locked) we have the following range of IPs:
+Network Address (Reserved)|Usable IP Range (VALID)|Broadcast Address (Reserved)
+-|-|-
+.0|.1 to .126|.127
+.128|.129 to .254|.255
+
+Since 104.198.162.125 is also already assigned and locked for one of the interfaces we need to select values for the last octet (Host Part) of the IP from .1 to .126 excluding .125.
 
 ## Level 4
 
