@@ -187,3 +187,5 @@ Packets IPs: 163.14.136.0 to 163.14.136.63
 resulting in 79.105.128.0/18
 
 ## Level 10
+
+Difficulty: overlapping IPs
