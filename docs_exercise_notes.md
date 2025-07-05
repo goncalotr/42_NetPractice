@@ -181,6 +181,13 @@ Private IP Ranges
 
 	Note: IP addresses in the ranges 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 are private. They are meant for internal networks only (e.g., home, school, office). Internet routers are configured to drop all traffic from these addresses. The solution required using only public IPs for any network segment that had to cross the simulated "Internet" router.
 
+Loopback Address (Localhost)
+
+	Note: The address 127.0.0.1 is the localhost address. It always means "this device" or "this computer." The entire 127.0.0.0/8 range is reserved for this loopback function.
+
+- Purpose: It is used by a computer to send network messages to itself, commonly for development and testing, without sending any packets onto the physical network.
+
+- Rule: Like private IPs, you can never assign a loopback address to a physical router or client interface in a network diagram. It is an internally-managed address and must never appear on a network.
 ## Level 9
 
 /18 = 255.255.192.0
