@@ -175,6 +175,12 @@ Packets IPs: 163.14.136.0 to 163.14.136.63
 
 /28 = 255.255.255.240
 
+### Reserved IP Address Types
+
+Private IP Ranges
+
+	Note: IP addresses in the ranges 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 are private. They are meant for internal networks only (e.g., home, school, office). Internet routers are configured to drop all traffic from these addresses. The solution required using only public IPs for any network segment that had to cross the simulated "Internet" router.
+
 ## Level 9
 
 /18 = 255.255.192.0
@@ -189,3 +195,5 @@ resulting in 79.105.128.0/18
 ## Level 10
 
 Difficulty: overlapping IPs
+
+The goal is to give every single network segment its own unique, properly-sized, and non-overlapping address space.
