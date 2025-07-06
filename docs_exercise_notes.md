@@ -175,6 +175,17 @@ Packets IPs: 163.14.136.0 to 163.14.136.63
 
 /28 = 255.255.255.240
 
+## Level 9
+
+/18 = 255.255.192.0
+
+11111111.11111111.11000000.00000000
+
+79.105.152.18 does not belong to the network 79.105.152.0/18
+
+79.105.152.18 range is 79.105.128.1 to 79.105.191.254
+resulting in 79.105.128.0/18
+
 ### Reserved IP Address Types
 
 Private IP Ranges
@@ -188,16 +199,6 @@ Loopback Address (Localhost)
 - Purpose: It is used by a computer to send network messages to itself, commonly for development and testing, without sending any packets onto the physical network.
 
 - Rule: Like private IPs, you can never assign a loopback address to a physical router or client interface in a network diagram. It is an internally-managed address and must never appear on a network.
-## Level 9
-
-/18 = 255.255.192.0
-
-11111111.11111111.11000000.00000000
-
-79.105.152.18 does not belong to the network 79.105.152.0/18
-
-79.105.152.18 range is 79.105.128.1 to 79.105.191.254
-resulting in 79.105.128.0/18
 
 ## Level 10
 
