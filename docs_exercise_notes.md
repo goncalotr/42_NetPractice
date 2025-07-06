@@ -59,6 +59,7 @@ Here is a quick reference for common CIDR notations:
 | /25 | 255.255.255.128 | 128 | 126 |
 | /26 | 255.255.255.192 | 64 | 62 |
 | /27 | 255.255.255.224 | 32 | 30 |
+| /28 | 255.255.255.240 | 16 | 14 |
 | /30 | 255.255.255.252 | 4 | 2 |
 
 So with 4 Block Size we get
@@ -174,6 +175,8 @@ Internet: 163.161.194.0/26 (locked)
 Packets IPs: 163.14.136.0 to 163.14.136.63
 
 /28 = 255.255.255.240
+
+We can only use IPs inside the destination inside the routing table of the internet node. (which is locked at something like 166.55.81.0/26)
 
 ## Level 9
 
